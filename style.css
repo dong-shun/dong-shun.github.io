@@ -131,6 +131,21 @@ main {
   color: #555;
 }
 
+.hero-bio {
+  max-width: 620px;
+  margin-top: 28px;
+  margin-bottom: 18px;
+
+  font-size: 17px;
+  line-height: 1.7;
+  color: #333;
+}
+
+.research-interests {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #444;
+}
 
 /* =========================
    Sections
