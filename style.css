@@ -89,12 +89,27 @@ main {
 
   display: flex;
   align-items: center;
-  gap: 55px;
+  gap: 45px;
 
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
+.hero-photo {
+  flex: 0 0 210px;
+}
+
+.hero-photo img {
+  display: block;
+  width: 210px;
+  height: 270px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero-info {
+  flex: 1;
+}
 .hero-photo {
   flex: 0 0 260px;
 }
