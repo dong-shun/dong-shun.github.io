@@ -28,10 +28,9 @@ body {
   margin: 0 auto;
   padding: 16px 30px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
 }
-
 .nav-name {
   font-size: 21px;
   font-weight: 600;
