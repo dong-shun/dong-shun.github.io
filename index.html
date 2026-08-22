@@ -1,470 +1,282 @@
-/* =========================================================
-   Global
-   ========================================================= */
+<!DOCTYPE html>
+<html lang="en">
 
-* {
-  box-sizing: border-box;
-}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html {
-  scroll-behavior: smooth;
-}
+  <title>Shun Dong</title>
 
-body {
-  margin: 0;
+  <link rel="stylesheet" href="style.css">
+</head>
 
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.7;
+<body>
 
-  color: #2b2b2b;
-  background: #ffffff;
-}
+  <!-- =====================================================
+       Sidebar
+       ===================================================== -->
 
-a {
-  color: #365f8d;
-}
+  <aside class="sidebar">
 
-a:hover {
-  color: #1f3f63;
-}
+    <a class="sidebar-name" href="index.html">
+      Shun Dong
+    </a>
 
+    <nav class="sidebar-nav">
+      <a class="active" href="index.html">Home</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="files/Shun_Dong_CV.pdf" target="_blank">CV</a>
+    </nav>
 
-/* =========================================================
-   Sidebar
-   ========================================================= */
+  </aside>
 
-.sidebar {
-  position: fixed;
-  top: 0;
-  left: 0;
 
-  width: 210px;
-  height: 100vh;
+  <!-- =====================================================
+       Main Content
+       ===================================================== -->
 
-  padding: 48px 30px;
+  <main>
 
-  background: #fafafa;
-  border-right: 1px solid #e8e8e8;
-}
+    <div class="page-container">
 
-.sidebar-name {
-  display: block;
 
-  margin-bottom: 38px;
+      <!-- =================================================
+           Profile
+           ================================================= -->
 
-  font-size: 23px;
-  font-weight: 600;
+      <section class="profile-section">
 
-  color: #222222;
-  text-decoration: none;
-}
+        <div class="profile-photo">
 
-.sidebar-name:hover {
-  color: #222222;
-}
+          <img
+            src="assets/profile.jpg"
+            alt="Shun Dong"
+          >
 
-.sidebar-nav {
-  display: flex;
-  flex-direction: column;
-}
+        </div>
 
-.sidebar-nav a {
-  display: block;
 
-  margin-bottom: 16px;
+        <div class="profile-info">
 
-  font-size: 16px;
+          <h1>Shun Dong</h1>
 
-  color: #666666;
-  text-decoration: none;
-}
+          <div class="profile-title">
+            Ph.D. Candidate in Analytics, Information and Operations
+          </div>
 
-.sidebar-nav a:hover {
-  color: #222222;
-}
+          <div class="profile-school">
+            University of Kansas School of Business
+          </div>
 
-.sidebar-nav a.active {
-  color: #222222;
-  font-weight: 600;
-}
 
+          <div class="profile-email">
 
-/* =========================================================
-   Main Page
-   ========================================================= */
+            <a href="mailto:shun.dong@ku.edu">
+              shun.dong@ku.edu
+            </a>
 
-main {
-  margin-left: 210px;
-}
+          </div>
 
-.page-container {
-  max-width: 1000px;
 
-  margin: 0 auto;
+          <div class="profile-links">
 
-  padding: 55px 55px 90px 55px;
-}
+            <a
+              href="files/Shun_Dong_CV.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
 
+            <span>·</span>
 
-/* =========================================================
-   Profile
-   ========================================================= */
+            <a
+              href="https://scholar.google.com/citations?user=BU7APEkAAAAJ&hl=en"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Google Scholar
+            </a>
 
-.profile-section {
-  display: flex;
-  align-items: center;
+            <span>·</span>
 
-  gap: 48px;
+            <a
+              href="https://business.ku.edu/people/shun-dong"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              KU Profile
+            </a>
 
-  padding-bottom: 48px;
-}
+          </div>
 
-.profile-photo {
-  flex: 0 0 220px;
-}
+        </div>
 
-.profile-photo img {
-  display: block;
+      </section>
 
-  width: 220px;
-  height: 280px;
 
-  object-fit: cover;
-  object-position: center top;
+      <!-- =================================================
+           About Me
+           ================================================= -->
 
-  border-radius: 2px;
+      <section class="home-block">
 
-  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
-}
+        <h2>About Me</h2>
 
-.profile-info {
-  flex: 1;
-}
+        <p>
+          I am a Ph.D. candidate in Analytics, Information and Operations
+          at the University of Kansas School of Business. My research lies
+          at the intersection of statistical learning and business analytics,
+          with particular interests in high-dimensional data analysis,
+          nonparametric and semiparametric methods, statistical computing,
+          and machine learning. My work applies these methods to problems
+          in business, finance, and risk analytics.
+        </p>
 
-.profile-info h1 {
-  margin: 0 0 13px 0;
+        <p>
+          Outside of research, I enjoy movies and music, and I like building,
+          upgrading, and tinkering with computer hardware.
+        </p>
 
-  font-size: 44px;
-  line-height: 1.15;
+      </section>
 
-  font-weight: 600;
-  color: #222222;
-}
 
-.profile-title {
-  margin-bottom: 5px;
+      <!-- =================================================
+           Job Market Paper
+           ================================================= -->
 
-  font-size: 20px;
-  line-height: 1.5;
+      <section class="home-block">
 
-  color: #333333;
-}
+        <h2>Job Market Paper</h2>
 
-.profile-school {
-  margin-bottom: 18px;
 
-  font-size: 17px;
+        <div class="featured-paper">
 
-  color: #666666;
-}
+          <h3>
+            Accounting for Industry Heterogeneity in Predicting Corporate
+            Default Probability: A Semiparametric Learning Approach
+          </h3>
 
-.profile-email {
-  margin-bottom: 6px;
 
-  font-size: 16px;
-}
+          <p class="paper-authors">
+            with Shaobo Li, Ben Sherwood, and Xiaorui Zhu
+          </p>
 
-.profile-email a {
-  color: #365f8d;
-  text-decoration: none;
-}
 
-.profile-email a:hover {
-  text-decoration: underline;
-}
+          <p class="paper-status">
+            <strong>
+              Revise and Resubmit,
+              <em>European Journal of Operational Research</em>
+            </strong>
+          </p>
 
-.profile-links {
-  margin-top: 3px;
 
-  font-size: 15px;
-}
+          <p class="abstract">
 
-.profile-links a {
-  color: #365f8d;
-  text-decoration: none;
-}
+            <strong>Abstract:</strong>
 
-.profile-links a:hover {
-  text-decoration: underline;
-}
+            Predicting corporate default is essential for risk management,
+            credit allocation, and investment decision making, yet most
+            bankruptcy models overlook heterogeneity in how financial distress
+            manifests across industries. We propose the single-index hazard
+            model with multiple links (SIML), a semiparametric learning method
+            that combines a common financial risk index with industry-specific
+            flexible link functions. This structure captures nonlinear industry
+            effects and their interactions with firm-level financial
+            characteristics while retaining an interpretable low-dimensional
+            index. We also develop a two-stage simulation-based testing
+            procedure for industry heterogeneity and nonlinearity. Using a
+            comprehensive database of 18,651 U.S. publicly traded firms from
+            1980 to 2023, we find strong evidence of distinct nonlinear risk
+            patterns across industries. SIML outperforms a broad set of
+            benchmark models in both in-sample and out-of-sample evaluations.
+            A simulated corporate loan market and an asset-pricing analysis
+            of the distress risk anomaly further show the economic value of
+            accounting for industry-specific default risk.
 
-.profile-links span {
-  margin: 0 8px;
+          </p>
 
-  color: #aaaaaa;
-}
+        </div>
 
+      </section>
 
-/* =========================================================
-   Home Sections
-   ========================================================= */
 
-.home-block {
-  margin-top: 12px;
-  margin-bottom: 54px;
-}
+      <!-- =================================================
+           Awards and Fellowships
+           ================================================= -->
 
-.home-block h2 {
-  margin: 0 0 22px 0;
+      <section class="home-block">
 
-  padding-bottom: 9px;
+        <h2>Awards &amp; Fellowships</h2>
 
-  font-size: 25px;
-  line-height: 1.3;
 
-  font-weight: 500;
+        <ul class="award-list">
 
-  color: #3d648d;
+          <li>
+            <strong>School of Business Best Paper Award</strong>,
+            University of Kansas, 2026
+          </li>
 
-  border-bottom: 1px solid #d9e0e7;
-}
+          <li>
+            <strong>Max E. Fessler Dissertation Support Award</strong>,
+            University of Kansas, 2026
+          </li>
 
-.home-block p {
-  margin-top: 0;
-  margin-bottom: 16px;
+          <li>
+            <strong>John O. Tollefson Best Paper Award</strong>,
+            University of Kansas School of Business, 2026
+          </li>
 
-  max-width: 830px;
-}
+          <li>
+            <strong>INFORMS Fellowship</strong>
+          </li>
 
+          <li>
+            <strong>POMS Fellowship</strong>
+          </li>
 
-/* =========================================================
-   Job Market Paper
-   ========================================================= */
+          <li>
+            <strong>Graduate Teaching Assistantship</strong>,
+            University of Kansas, 2023&ndash;Present
+          </li>
 
-.featured-paper {
-  padding-left: 18px;
+          <li>
+            <strong>Graduate Research Assistantship</strong>,
+            University of Cincinnati, 2020&ndash;2022
+          </li>
 
-  border-left: 3px solid #d7e1eb;
-}
+          <li>
+            <strong>Graduate Teaching Assistantship</strong>,
+            University of Cincinnati, 2018&ndash;2020
+          </li>
 
-.featured-paper h3 {
-  margin: 0 0 7px 0;
+          <li>
+            <strong>Graduate Teaching Assistantship</strong>,
+            Missouri State University, 2015&ndash;2017
+          </li>
 
-  font-size: 19px;
-  line-height: 1.5;
+          <li>
+            <strong>
+              1st Place, CNAS Thesis Competition Research Award
+            </strong>,
+            Missouri State University, 2014
+          </li>
 
-  font-weight: 600;
+          <li>
+            <strong>CSSA Outstanding Contribution Award</strong>,
+            2014
+          </li>
 
-  color: #222222;
-}
+        </ul>
 
-.paper-authors {
-  margin: 0 0 4px 0 !important;
+      </section>
 
-  font-size: 15px;
 
-  color: #666666;
-}
+    </div>
 
+  </main>
 
-/* Highlight the R&R result */
+</body>
 
-.paper-status {
-  margin: 4px 0 18px 0 !important;
-
-  font-size: 16px;
-
-  font-weight: 700;
-
-  color: #294f79;
-}
-
-.paper-status em {
-  font-weight: 700;
-}
-
-
-/* Abstract */
-
-.abstract {
-  margin-top: 18px !important;
-
-  font-size: 15.5px;
-  line-height: 1.75;
-
-  color: #333333;
-}
-
-.abstract strong {
-  font-weight: 600;
-}
-
-
-/* =========================================================
-   Awards and Fellowships
-   ========================================================= */
-
-.award-list {
-  margin: 0;
-  padding-left: 22px;
-}
-
-.award-list li {
-  margin-bottom: 11px;
-
-  padding-left: 4px;
-
-  line-height: 1.6;
-}
-
-.award-list strong {
-  font-weight: 600;
-}
-
-
-/* =========================================================
-   Research / Teaching Pages
-   We will use these classes later
-   ========================================================= */
-
-.page-header {
-  margin-bottom: 40px;
-}
-
-.page-header h1 {
-  margin: 0;
-
-  padding-bottom: 10px;
-
-  font-size: 34px;
-  font-weight: 500;
-
-  color: #3d648d;
-
-  border-bottom: 1px solid #d9e0e7;
-}
-
-.content-section {
-  margin-bottom: 55px;
-}
-
-.content-section h2 {
-  margin-bottom: 25px;
-
-  padding-bottom: 8px;
-
-  font-size: 24px;
-  font-weight: 500;
-
-  color: #3d648d;
-
-  border-bottom: 1px solid #e1e6eb;
-}
-
-.paper {
-  margin-bottom: 38px;
-}
-
-.paper h3 {
-  margin-bottom: 6px;
-
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.paper p {
-  margin-top: 5px;
-}
-
-
-/* =========================================================
-   Mobile
-   ========================================================= */
-
-@media (max-width: 760px) {
-
-  .sidebar {
-    position: relative;
-
-    width: 100%;
-    height: auto;
-
-    padding: 24px 25px;
-
-    border-right: none;
-    border-bottom: 1px solid #e8e8e8;
-  }
-
-  .sidebar-name {
-    margin-bottom: 16px;
-  }
-
-  .sidebar-nav {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .sidebar-nav a {
-    margin-right: 22px;
-    margin-bottom: 5px;
-  }
-
-  main {
-    margin-left: 0;
-  }
-
-  .page-container {
-    padding: 35px 25px 60px 25px;
-  }
-
-  .profile-section {
-    flex-direction: column;
-    align-items: flex-start;
-
-    gap: 28px;
-
-    padding-bottom: 40px;
-  }
-
-  .profile-photo {
-    flex: none;
-  }
-
-  .profile-photo img {
-    width: 200px;
-    height: 255px;
-  }
-
-  .profile-info h1 {
-    font-size: 36px;
-  }
-
-  .profile-title {
-    font-size: 18px;
-  }
-
-  .profile-school {
-    font-size: 16px;
-  }
-
-  .home-block {
-    margin-bottom: 45px;
-  }
-
-  .home-block h2 {
-    font-size: 23px;
-  }
-
-  .featured-paper {
-    padding-left: 14px;
-  }
-
-  .featured-paper h3 {
-    font-size: 18px;
-  }
-
-  .abstract {
-    font-size: 15px;
-  }
-}
+</html>
