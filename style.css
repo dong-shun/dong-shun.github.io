@@ -89,9 +89,27 @@ main {
 
   display: flex;
   align-items: center;
+  gap: 55px;
 
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.hero-photo {
+  flex: 0 0 260px;
+}
+
+.hero-photo img {
+  display: block;
+  width: 260px;
+  height: 325px;
+
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero-info {
+  flex: 1;
 }
 
 .hero h1 {
@@ -174,4 +192,20 @@ main {
   .hero-subtitle {
     font-size: 19px;
   }
+
+    .hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .hero-photo {
+    flex: none;
+  }
+
+  .hero-photo img {
+    width: 220px;
+    height: 275px;
+  }
+  
 }
