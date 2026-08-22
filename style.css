@@ -96,14 +96,14 @@ main {
 }
 
 .hero-photo {
-  flex: 0 0 210px;
+  flex: 0 0 235px;
 }
 
 .hero-photo img {
   display: block;
 
-  width: 210px;
-  height: 270px;
+  width: 235px;
+  height: 300px;
 
   object-fit: cover;
   object-position: center top;
