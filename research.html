@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Research | Shun Dong</title>
+
+  <link rel="stylesheet" href="style.css?v=20260822">
+</head>
+
+<body>
+
+  <!-- =====================================================
+       Sidebar
+       ===================================================== -->
+
+  <aside class="sidebar">
+
+    <a class="sidebar-name" href="index.html">
+      Shun Dong
+    </a>
+
+    <nav class="sidebar-nav">
+      <a href="index.html">Home</a>
+      <a class="active" href="research.html">Research</a>
+      <a href="teaching.html">Teaching</a>
+      <a href="files/Shun_Dong_CV.pdf" target="_blank">CV</a>
+    </nav>
+
+  </aside>
+
+
+  <!-- =====================================================
+       Main Content
+       ===================================================== -->
+
+  <main>
+
+    <div class="page-container">
+
+
+      <!-- =================================================
+           Page Header
+           ================================================= -->
+
+      <section class="page-header">
+
+        <h1>Research</h1>
+
+      </section>
+
+
+      <!-- =================================================
+           Working Papers
+           ================================================= -->
+
+      <section class="content-section">
+
+        <h2>Working Papers</h2>
+
+
+        <!-- Paper 1 -->
+
+        <article class="paper">
+
+          <h3>
+            Cost Restricted Feature Selection with Information Criterion
+          </h3>
+
+          <p>
+            with Ben Sherwood and Shaobo Li
+          </p>
+
+          <p>
+            <em>Preparing for submission to Management Science</em>
+          </p>
+
+          <p>
+            <strong>Abstract:</strong>
+            We study feature selection for data acquisition when candidate
+            variables are costly and must be selected under an acquisition
+            budget. Existing cost-restricted methods typically focus on
+            predictive loss subject to the budget, but they do not explicitly
+            account for the increase in model complexity from acquiring
+            additional variables. We propose a cost-restricted information
+            criterion approach, CRIC, that preserves the acquisition budget as
+            a feasibility constraint while adding an AIC- or BIC-type complexity
+            charge for each selected feature. This allows the method to reject
+            feasible variables whose incremental contribution is too small to
+            justify their inclusion, rather than automatically exhausting the
+            available budget. We develop computational procedures for Gaussian
+            and binary-response settings and evaluate the approach through
+            extensive simulations and empirical applications. The results show
+            that CRIC can substantially reduce unnecessary feature acquisition
+            and select smaller models while preserving competitive out-of-sample
+            predictive performance, with particularly clear gains when the
+            acquisition budget is relatively loose.
+          </p>
+
+        </article>
+
+
+        <!-- Paper 2 -->
+
+        <article class="paper">
+
+          <h3>
+            Objective-Aligned Sparse Learning for Neyman-Pearson Classification
+          </h3>
+
+          <p>
+            with Shaobo Li, Ben Sherwood, and Xiaorui Zhu
+          </p>
+
+          <p>
+            <em>
+              Preparing for submission to INFORMS Journal on Computing
+            </em>
+          </p>
+
+          <p>
+            <strong>Abstract:</strong>
+            This paper develops an objective-aligned framework for asymmetric
+            classification in which score estimation and variable selection are
+            learned specifically to minimize false negatives subject to a
+            prespecified false positive rate constraint. Standard Neyman-Pearson
+            procedures typically estimate a scoring rule under a symmetric
+            objective and then use threshold calibration to impose asymmetric
+            error control. Our method instead incorporates the deployment
+            objective directly into regularized score learning, while retaining
+            a separate calibration step for final false positive rate control.
+            This allows the selected variables and score direction to reflect
+            the operating point that matters for the decision problem.
+            Simulation studies consistently show lower false negative rates
+            than standard and penalized Neyman-Pearson classifiers, especially
+            when the variables that matter under the asymmetric objective differ
+            from those selected under a symmetric loss. In a bankruptcy
+            application using 18,651 U.S. publicly traded firms from 1980 to
+            2023, the method reduces the false negative rate from 48.9% to 35.1%
+            at a 5% false positive rate target, a 28% reduction in missed
+            bankruptcies, and raises recall from 51.1% to 64.9%.
+          </p>
+
+        </article>
+
+
+        <!-- Paper 3 -->
+
+        <article class="paper">
+
+          <h3>
+            Dynamic Instrumented Principal Components for Time-Varying Risk Exposures
+          </h3>
+
+          <p>
+            with Shaobo Li and Ben Sherwood
+          </p>
+
+          <p>
+            <em>Target journal: Journal of Empirical Finance</em>
+          </p>
+
+          <p>
+            <strong>Abstract:</strong>
+            This paper develops a dynamic extension of instrumented principal
+            components analysis (IPCA) that allows the mapping from firm
+            characteristics to latent factor loadings to evolve over time.
+            Standard IPCA permits characteristics to vary across firms and time
+            but keeps the characteristic-to-loading map fixed. Our model allows
+            this relationship itself to change, capturing persistent shifts in
+            how firm characteristics translate into systematic risk exposures
+            while preserving the characteristic-based factor structure and
+            interpretability of IPCA. Empirically, the dynamic specification
+            substantially improves in-sample fit across latent factor dimensions.
+            With appropriate control of dynamic variation, it also produces
+            sizable out-of-sample gains in return and managed-portfolio
+            prediction relative to static IPCA. The results indicate that
+            allowing the characteristic-risk relationship to evolve improves
+            the description of realized systematic variation and the prediction
+            of expected returns.
+          </p>
+
+        </article>
+
+
+        <!-- Paper 4 -->
+
+        <article class="paper">
+
+          <h3>
+            Robust Outcome Optimization via Multi-Model Inverse Classification
+          </h3>
+
+          <p>
+            with Michael Lash, Qihang Lin, and Nick Street
+          </p>
+
+          <p>
+            <em>Target journal: Journal of Machine Learning Research</em>
+          </p>
+
+          <p>
+            <strong>Abstract:</strong>
+            This paper develops a multi-model inverse classification framework
+            for robust outcome optimization. Existing inverse classification
+            methods generate intervention recommendations with respect to a
+            single predictive model, even though practitioners often face a
+            collection of plausible models that can disagree about the effect
+            of an intervention. We instead optimize recommendations over the
+            distribution of predictions generated by multiple models and allow
+            the decision maker to choose the desired level of risk. The
+            framework accounts for intervention costs, feasibility constraints,
+            and indirect changes in non-actionable features, while the
+            optimization formulation targets recommendations that remain
+            effective across model variation rather than being tailored to a
+            single fitted model. In an application to cardiovascular risk
+            reduction, the method produces practical recommendations that
+            remain effective across alternative predictive specifications,
+            illustrating how multi-model inverse classification can make
+            prescriptive analytics more robust to variation in the underlying
+            prediction model.
+          </p>
+
+        </article>
+
+      </section>
+
+
+      <!-- =================================================
+           Publications
+           ================================================= -->
+
+      <section class="content-section">
+
+        <h2>Publications</h2>
+
+
+        <!-- Publication 1 -->
+
+        <article class="paper">
+
+          <h3>
+            Relationship between piperacillin concentrations, clinical factors
+            and piperacillin/tazobactam-associated acute kidney injury
+          </h3>
+
+          <p>
+            Tang Girdwood, S., Hasson, D., Caldwell, J. T., Slagle, C.,
+            <strong>Dong, S.</strong>, Fei, L., Tang, P., Vinks, A. A.,
+            Kaplan, J., &amp; Goldstein, S. L.
+          </p>
+
+          <p>
+            <em>Journal of Antimicrobial Chemotherapy</em>,
+            78(2), 478–487, 2023.
+          </p>
+
+          <p>
+            <a
+              href="https://doi.org/10.1093/jac/dkac416"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI
+            </a>
+          </p>
+
+        </article>
+
+
+        <!-- Publication 2 -->
+
+        <article class="paper">
+
+          <h3>
+            Diagnostic accuracy of serum matrix metalloproteinase-7 as a
+            biomarker of biliary atresia in a large North American cohort
+          </h3>
+
+          <p>
+            Pandurangi, S., Mourya, R., Nalluri, S., Fei, L.,
+            <strong>Dong, S.</strong>, Harpavat, S., Guthery, S. L.,
+            Molleston, J. P., Rosenthal, P., Sokol, R. J., Wang, K. S.,
+            Ng, V., Alonso, E. M., Hsu, E. K., Karpen, S. J.,
+            Loomes, K. M., Magee, J. C., Shneider, B. L., Horslen, S. P.,
+            Teckman, J. H., &amp; Bezerra, J. A.
+          </p>
+
+          <p>
+            <em>Hepatology</em>, 2024.
+          </p>
+
+          <p>
+            <a
+              href="https://doi.org/10.1097/HEP.0000000000000827"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI
+            </a>
+          </p>
+
+        </article>
+
+
+        <!-- Publication 3 -->
+
+        <article class="paper">
+
+          <h3>
+            Maternal metabolic dysfunction-associated steatotic liver disease
+            during pregnancy and its impact on offspring steatosis
+          </h3>
+
+          <p>
+            Klepper, C. M., Trout, A. T., <strong>Dong, S.</strong>,
+            Fei, L., Stankiewicz, T. E., Wayland, J.,
+            Moreno-Fernandez, M. E., Divanovic, S., Xanthakos, S. A.,
+            DeFranco, E., Woo, J. G., &amp; Mouzaki, M.
+          </p>
+
+          <p>
+            <em>Clinical Nutrition ESPEN</em>,
+            70, 327–335, 2025.
+          </p>
+
+          <p>
+            <a
+              href="https://doi.org/10.1016/j.clnesp.2025.10.009"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              DOI
+            </a>
+          </p>
+
+        </article>
+
+      </section>
+
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>
