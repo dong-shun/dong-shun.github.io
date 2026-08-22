@@ -16,7 +16,7 @@ body {
 
 
 /* =========================
-   Left Sidebar
+   Sidebar
    ========================= */
 
 .sidebar {
@@ -29,13 +29,12 @@ body {
 
   padding: 55px 35px;
 
+  background: #fff;
   border-right: 1px solid #eeeeee;
-  background: #ffffff;
 }
 
 .sidebar-name {
   display: block;
-
   margin-bottom: 40px;
 
   font-size: 23px;
@@ -51,11 +50,13 @@ body {
 }
 
 .sidebar-nav a {
+  display: block;
+
   margin-bottom: 17px;
 
   font-size: 16px;
-
   color: #555;
+
   text-decoration: none;
 }
 
@@ -65,7 +66,7 @@ body {
 
 
 /* =========================
-   Main Page
+   Main content
    ========================= */
 
 main {
@@ -102,7 +103,6 @@ main {
 
 .hero-subtitle {
   margin-bottom: 8px;
-
   font-size: 22px;
 }
 
@@ -118,13 +118,11 @@ main {
 
 .section {
   padding: 80px 0;
-
   border-top: 1px solid #eeeeee;
 }
 
 .section h2 {
   margin-top: 0;
-
   font-size: 32px;
 }
 
@@ -141,7 +139,7 @@ main {
     width: 100%;
     height: auto;
 
-    padding: 25px 25px;
+    padding: 25px;
 
     border-right: none;
     border-bottom: 1px solid #eeeeee;
