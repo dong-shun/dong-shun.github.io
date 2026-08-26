@@ -7,7 +7,7 @@
 
   <title>Research | Shun Dong</title>
 
-  <link rel="stylesheet" href="style.css?v=20260822">
+  <link rel="stylesheet" href="style.css?v=20260826">
 </head>
 
 <body>
@@ -26,7 +26,12 @@
       <a href="index.html">Home</a>
       <a class="active" href="research.html">Research</a>
       <a href="teaching.html">Teaching</a>
-      <a href="files/Shun_Dong_CV.pdf" target="_blank">CV</a>
+      <a
+        href="files/Shun_Dong_CV.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        CV
+      </a>
     </nav>
 
   </aside>
@@ -61,7 +66,59 @@
         <h2>Working Papers</h2>
 
 
-        <!-- Paper 1 -->
+        <!-- =================================================
+             Paper 1
+             ================================================= -->
+
+        <article class="paper">
+
+          <h3>
+            Accounting for Industry Heterogeneity in Predicting Corporate
+            Default Probability: A Semiparametric Learning Approach
+          </h3>
+
+          <p class="paper-authors">
+            with Shaobo Li, Ben Sherwood, and Xiaorui Zhu
+          </p>
+
+          <p class="paper-status">
+            <strong>
+              Revise and Resubmit,
+              <em>European Journal of Operational Research</em>
+            </strong>
+          </p>
+
+          <p class="abstract">
+
+            <strong>Abstract:</strong>
+
+            Predicting corporate default is essential for risk management,
+            credit allocation, and investment decision making, yet most
+            bankruptcy models overlook heterogeneity in how financial distress
+            manifests across industries. We propose the single-index hazard
+            model with multiple links (SIML), a semiparametric learning method
+            that combines a common financial risk index with industry-specific
+            flexible link functions. This structure captures nonlinear industry
+            effects and their interactions with firm-level financial
+            characteristics while retaining an interpretable low-dimensional
+            index. We also develop a two-stage simulation-based testing
+            procedure for industry heterogeneity and nonlinearity. Using a
+            comprehensive database of 18,651 U.S. publicly traded firms from
+            1980 to 2023, we find strong evidence of distinct nonlinear risk
+            patterns across industries. SIML outperforms a broad set of
+            benchmark models in both in-sample and out-of-sample evaluations.
+            A simulated corporate loan market and an asset-pricing analysis
+            of the distress risk anomaly further show the economic value of
+            accounting for industry-specific default risk.
+
+          </p>
+
+        </article>
+
+
+        <!-- =================================================
+             Paper 2
+             ================================================= -->
 
         <article class="paper">
 
@@ -69,16 +126,18 @@
             Cost Restricted Feature Selection with Information Criterion
           </h3>
 
-          <p>
+          <p class="paper-authors">
             with Ben Sherwood and Shaobo Li
           </p>
 
-          <p>
+          <p class="paper-status">
             <em>Preparing for submission to Management Science</em>
           </p>
 
-          <p>
+          <p class="abstract">
+
             <strong>Abstract:</strong>
+
             We study feature selection for data acquisition when candidate
             variables are costly and must be selected under an acquisition
             budget. Existing cost-restricted methods typically focus on
@@ -97,12 +156,61 @@
             and select smaller models while preserving competitive out-of-sample
             predictive performance, with particularly clear gains when the
             acquisition budget is relatively loose.
+
           </p>
 
         </article>
 
 
-        <!-- Paper 2 -->
+        <!-- =================================================
+             Paper 3
+             ================================================= -->
+
+        <article class="paper">
+
+          <h3>
+            Robust Outcome Optimization via Multi-Model Inverse Classification
+          </h3>
+
+          <p class="paper-authors">
+            with Michael Lash, Qihang Lin, and Nick Street
+          </p>
+
+          <p class="paper-status">
+            <em>Target journal: Journal of Machine Learning Research</em>
+          </p>
+
+          <p class="abstract">
+
+            <strong>Abstract:</strong>
+
+            This paper develops a multi-model inverse classification framework
+            for robust outcome optimization. Existing inverse classification
+            methods generate intervention recommendations with respect to a
+            single predictive model, even though practitioners often face a
+            collection of plausible models that can disagree about the effect
+            of an intervention. We instead optimize recommendations over the
+            distribution of predictions generated by multiple models and allow
+            the decision maker to choose the desired level of risk. The
+            framework accounts for intervention costs, feasibility constraints,
+            and indirect changes in non-actionable features, while the
+            optimization formulation targets recommendations that remain
+            effective across model variation rather than being tailored to a
+            single fitted model. In an application to cardiovascular risk
+            reduction, the method produces practical recommendations that
+            remain effective across alternative predictive specifications,
+            illustrating how multi-model inverse classification can make
+            prescriptive analytics more robust to variation in the underlying
+            prediction model.
+
+          </p>
+
+        </article>
+
+
+        <!-- =================================================
+             Paper 4
+             ================================================= -->
 
         <article class="paper">
 
@@ -110,8 +218,20 @@
             Objective-Aligned Sparse Learning for Neyman-Pearson Classification
           </h3>
 
-          <p>
+          <p class="paper-authors">
+            with Shaobo Li, Ben Sherwood, and Xiaorui Zhu
+          </p>
+
+          <p class="paper-status">
+            <em>
+              Preparing for submission to INFORMS Journal on Computing
+            </em>
+          </p>
+
+          <p class="abstract">
+
             <strong>Abstract:</strong>
+
             This paper develops an objective-aligned framework for asymmetric
             classification in which score estimation and variable selection are
             learned specifically to minimize false negatives subject to a
@@ -131,12 +251,15 @@
             2023, the method reduces the false negative rate from 48.9% to 35.1%
             at a 5% false positive rate target, a 28% reduction in missed
             bankruptcies, and raises recall from 51.1% to 64.9%.
+
           </p>
 
         </article>
 
 
-        <!-- Paper 3 -->
+        <!-- =================================================
+             Paper 5
+             ================================================= -->
 
         <article class="paper">
 
@@ -144,8 +267,18 @@
             Dynamic Instrumented Principal Components for Time-Varying Risk Exposures
           </h3>
 
-          <p>
+          <p class="paper-authors">
+            with Shaobo Li and Ben Sherwood
+          </p>
+
+          <p class="paper-status">
+            <em>Target journal: Journal of Empirical Finance</em>
+          </p>
+
+          <p class="abstract">
+
             <strong>Abstract:</strong>
+
             This paper develops a dynamic extension of instrumented principal
             components analysis (IPCA) that allows the mapping from firm
             characteristics to latent factor loadings to evolve over time.
@@ -162,47 +295,7 @@
             allowing the characteristic-risk relationship to evolve improves
             the description of realized systematic variation and the prediction
             of expected returns.
-          </p>
 
-        </article>
-
-
-        <!-- Paper 4 -->
-
-        <article class="paper">
-
-          <h3>
-            Robust Outcome Optimization via Multi-Model Inverse Classification
-          </h3>
-
-          <p>
-            with Michael Lash, Qihang Lin, and Nick Street
-          </p>
-
-          <p>
-            <em>Target journal: Journal of Machine Learning Research</em>
-          </p>
-
-          <p>
-            <strong>Abstract:</strong>
-            This paper develops a multi-model inverse classification framework
-            for robust outcome optimization. Existing inverse classification
-            methods generate intervention recommendations with respect to a
-            single predictive model, even though practitioners often face a
-            collection of plausible models that can disagree about the effect
-            of an intervention. We instead optimize recommendations over the
-            distribution of predictions generated by multiple models and allow
-            the decision maker to choose the desired level of risk. The
-            framework accounts for intervention costs, feasibility constraints,
-            and indirect changes in non-actionable features, while the
-            optimization formulation targets recommendations that remain
-            effective across model variation rather than being tailored to a
-            single fitted model. In an application to cardiovascular risk
-            reduction, the method produces practical recommendations that
-            remain effective across alternative predictive specifications,
-            illustrating how multi-model inverse classification can make
-            prescriptive analytics more robust to variation in the underlying
-            prediction model.
           </p>
 
         </article>
@@ -219,7 +312,9 @@
         <h2>Publications</h2>
 
 
-        <!-- Publication 1 -->
+        <!-- =================================================
+             Publication 1
+             ================================================= -->
 
         <article class="paper">
 
@@ -243,8 +338,7 @@
             <a
               href="https://doi.org/10.1093/jac/dkac416"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               DOI
             </a>
           </p>
@@ -252,7 +346,9 @@
         </article>
 
 
-        <!-- Publication 2 -->
+        <!-- =================================================
+             Publication 2
+             ================================================= -->
 
         <article class="paper">
 
@@ -278,8 +374,7 @@
             <a
               href="https://doi.org/10.1097/HEP.0000000000000827"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               DOI
             </a>
           </p>
@@ -287,7 +382,9 @@
         </article>
 
 
-        <!-- Publication 3 -->
+        <!-- =================================================
+             Publication 3
+             ================================================= -->
 
         <article class="paper">
 
@@ -312,8 +409,7 @@
             <a
               href="https://doi.org/10.1016/j.clnesp.2025.10.009"
               target="_blank"
-              rel="noopener noreferrer"
-            >
+              rel="noopener noreferrer">
               DOI
             </a>
           </p>
